@@ -8,10 +8,9 @@
 
 ## Overview
 ### Description
-[Description of your app]
+The application allows users to quickly find various places near their current location based on either previously selected preferences, a certain category, name, or distance and display a detailed page with information on user-selected locations.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:** Lifestyle / Travel
 - **Mobile:** This application will be primarily developed for mobile devices but can also be viable on computers, such as Yelp or other similar applications. The application intends to make use of the maps and location features of a mobile device.
 - **Story:** Analyzes the user's location and connects the user to nearby locations that might peak their interest/current needs.
