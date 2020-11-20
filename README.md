@@ -64,7 +64,7 @@ The application allows users to quickly find various places near their current l
 
 ## Digital Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="https://drive.google.com/file/d/10yojSNloTlKY5mFfWcthPodAoHXbspxv/view?usp=sharing" width=600>
+<img src="./search_screens.png" width=600>
 
 ## Schema 
 [This section will be completed in Unit 9]
