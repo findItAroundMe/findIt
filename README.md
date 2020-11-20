@@ -40,14 +40,12 @@ The application allows users to quickly find various places near their current l
 
 * Login
   * Signs up or logs into account.
-* Profile Screen
-  * Allows user to confirm location and enter preferences.
 * Search Screen
   * Upon searching for location category, name, etc., map screen opens
 * Map Screen
    * Displays user's search results on map and contains descriptive infromation below in a swipable list.
-* Settings Screen
-  * Lets people change language and other preferences.
+* Profile Screen
+  * Lets people confirm location, change language, or change password.
 
 ### 3. Navigation
 
@@ -64,13 +62,9 @@ The application allows users to quickly find various places near their current l
 * Profile -> Text fields to be modified. 
 * Settings -> Toggle settings.
 
-## Wireframes
+## Digital Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
-
-### [BONUS] Digital Wireframes & Mockups
-
-### [BONUS] Interactive Prototype
+<img src="https://ibb.co/grKW9JS" width=600>
 
 ## Schema 
 [This section will be completed in Unit 9]
