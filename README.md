@@ -29,11 +29,11 @@ The application allows users to quickly find various places near their current l
 * User can click on the desired location for the address and a desription.
 * User settings page is accessible and can be altered.
 * User can see found locations on map interface in comparison to user's current location.
+* User can "favorite" specific locations to be saved and referenced later on another tab.
 
 **Optional Nice-to-have Stories**
 
 * User can click on the desired location for detailed desrciption/more information.
-* User can "favorite" specific locations to be saved and referenced later on another tab.
 * User can change current location to reflect another desired zip code or city.
 
 ### 2. Screen Archetypes
@@ -43,9 +43,11 @@ The application allows users to quickly find various places near their current l
 * Search Screen
   * Upon searching for location category, name, etc., map screen opens
 * Map Screen
-   * Displays user's search results on map and contains descriptive infromation below in a swipable list.
+   * Displays user's search results on map and contains descriptive infromation below in a swipable list. Allows user to favorite specific locations.
 * Profile Screen
   * Lets people confirm location, change language, or change password.
+* Saved Screen
+  * Lets people see locations they have favorited.
 
 ### 3. Navigation
 
@@ -54,6 +56,7 @@ The application allows users to quickly find various places near their current l
 * Search
 * Profile
 * Settings
+* Saved Locations
 
 **Flow Navigation** (Screen to Screen)
 
