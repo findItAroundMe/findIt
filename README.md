@@ -70,7 +70,14 @@ The application allows users to quickly find various places near their current l
 [This section will be completed in Unit 9]
 
 ### Models
-[Add table of models]
+#### Favorited Location
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | author        | Pointer to User| image author |
+   | name          | String   | name of the location
+   | category      | String   | description to specify category of location |
+   | address       | String   | address of the location |
 
 ### Networking
 - [Add list of network requests by screen ]
