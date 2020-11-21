@@ -66,8 +66,8 @@ The application allows users to quickly find various places near their current l
 * Settings -> Toggle settings.
 
 ## Digital Wireframes
-<img src="./login_screens.png" width=600>
-<img src="./search_screens.png" width=600>
+<img src="./login_screens.pngs" width=600>
+<img src="./search_screens.pngs" width=600>
 
 ## Schema 
 [This section will be completed in Unit 9]
