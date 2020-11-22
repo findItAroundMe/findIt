@@ -48,6 +48,8 @@ The application allows users to quickly find various places near their current l
   * Lets people confirm location, change language, or change password.
 * Saved Screen
   * Lets people see locations they have favorited.
+* Genre Screen
+  * Lets people create a search from categories.
 
 ### 3. Navigation
 
@@ -57,14 +59,16 @@ The application allows users to quickly find various places near their current l
 * Profile
 * Settings
 * Saved Locations
+* Genre
 
 **Flow Navigation** (Screen to Screen)
 
 * Forced Log-in -> Account creation if no log in is available.
-* Saved Locations --> Toggle saved locations.
-* Search Screen allows for user input -> Jumps to Map Screen showing search results.
+* Saved Locations -> Toggle saved locations.
+* Search Screen -> allows for user input -> Jumps to Map Screen showing search results.
 * Profile -> Text fields to be modified. 
 * Settings -> Toggle settings.
+* Genre -> Buttons to be selected -> Jumps to Map Screen showing search results.
 
 ## Digital Wireframes
 <img src="./login_screens.png" width=600>
@@ -85,14 +89,6 @@ The application allows users to quickly find various places near their current l
 
 ### Networking
 #### List of network requests by screen
-* Login
-  * Signs up or logs into account.
-* Search Screen
-  * Upon searching for location category, name, etc., map screen opens
-* Map Screen
-   * Displays user's search results on map and contains descriptive infromation below in a swipable list. Allows user to favorite specific locations.
-* Profile Screen
-  * Lets people confirm location, change language, or change password.
 * Saved Screen
    - Saved Locations Screen
       - (Read/GET) Query all saved locations where user is author
@@ -111,13 +107,18 @@ The application allows users to quickly find various places near their current l
          ```
       - (Delete) Delete existing saved location
    - Search Screen
-      - (Create/POST) Create a new post object
+      - (Create/POST) Create a new search text object
+      - (Read/GET) Query map object
    - Profile Screen
       - (Read/GET) Query logged in user object
       - (Update/PUT) Update user profile image
    - Map Screen
-      - (Read/GET) Query logged in user object
-      - (Update/PUT) Update user profile image
+      - (Read/GET) Query location objects based on text search object and user's current location
+      - (Read/GET) Saved location object (to cross match with location obejcts)
+      - (Read/GET) Query map object
+      - (Create/POST) Create a new saved location
+   - Genre Screen
+      - (Read/GET) Query genre objects (as list)
       
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
