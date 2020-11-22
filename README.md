@@ -120,5 +120,4 @@ The application allows users to quickly find various places near their current l
    - Genre Screen
       - (Read/GET) Query genre objects (as list)
       
-- [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
