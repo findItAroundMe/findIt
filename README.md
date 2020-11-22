@@ -61,6 +61,7 @@ The application allows users to quickly find various places near their current l
 **Flow Navigation** (Screen to Screen)
 
 * Forced Log-in -> Account creation if no log in is available.
+* Saved Locations --> Toggle saved locations.
 * Search Screen allows for user input -> Jumps to Map Screen showing search results.
 * Profile -> Text fields to be modified. 
 * Settings -> Toggle settings.
@@ -83,6 +84,40 @@ The application allows users to quickly find various places near their current l
    | address       | String   | address of the location |
 
 ### Networking
-- [Add list of network requests by screen ]
+#### List of network requests by screen
+* Login
+  * Signs up or logs into account.
+* Search Screen
+  * Upon searching for location category, name, etc., map screen opens
+* Map Screen
+   * Displays user's search results on map and contains descriptive infromation below in a swipable list. Allows user to favorite specific locations.
+* Profile Screen
+  * Lets people confirm location, change language, or change password.
+* Saved Screen
+   - Saved Locations Screen
+      - (Read/GET) Query all saved locations where user is author
+         ```swift
+         let query = PFQuery(className:"Locations")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (locations: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let locations = locations {
+               print("Successfully retrieved \(locations.count) locations.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
+      - (Delete) Delete existing saved location
+   - Search Screen
+      - (Create/POST) Create a new post object
+   - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
+   - Map Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
+      
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
