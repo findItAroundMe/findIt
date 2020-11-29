@@ -24,17 +24,17 @@ The application allows users to quickly find various places near their current l
 
 **Required Must-have Stories**
 
-* User logs in to access previous searches and recommendations based on existing profile.
-* User can search for a location based on genre, name, search radius.
-* User can click on the desired location for the address and a desription.
-* User settings page is accessible and can be altered.
-* User can see found locations on map interface in comparison to user's current location.
-* User can "favorite" specific locations to be saved and referenced later on another tab.
+[X] User can log in and sign up for an account.
+[] User can search for a location based on genre, name, search radius.
+[] User can click on the desired location for the address and a desription.
+[] User settings page is accessible and can be altered.
+[] User can see found locations on map interface in comparison to user's current location.
+[] User can "favorite" specific locations to be saved and referenced later on another tab.
 
 **Optional Nice-to-have Stories**
 
-* User can click on the desired location for detailed desrciption/more information.
-* User can change current location to reflect another desired zip code or city.
+[] User can click on the desired location for detailed desrciption/more information.
+[] User can change current location to reflect another desired zip code or city.
 
 ### 2. Screen Archetypes
 
