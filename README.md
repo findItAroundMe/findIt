@@ -2,9 +2,10 @@
 
 ## Table of Contents
 1. [Overview](#Overview)
-1. [Product Spec](#Product-Spec)
-1. [Wireframes](#Wireframes)
-2. [Schema](#Schema)
+2. [Product Spec](#Product-Spec)
+3. [Wireframes](#Wireframes)
+4. [Schema](#Schema)
+5. [Development Progress](#Progress)
 
 ## Overview
 ### Description
@@ -121,3 +122,9 @@ The application allows users to quickly find various places near their current l
       - (Read/GET) Query genre objects (as list)
       
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+## Progress
+
+### Week 7 Progress
+
+<img src='http://g.recordit.co/H2Yquo3FfI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
