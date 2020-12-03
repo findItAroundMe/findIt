@@ -20,6 +20,7 @@ class RegisterViewController: UIViewController {
     }
     
 
+
     @IBAction func onSignUp(_ sender: Any) {
         let user = PFUser()
         user.username = usernameField.text
