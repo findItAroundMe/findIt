@@ -133,4 +133,4 @@ The application allows users to quickly find various places near their current l
 
 ### Week 8 Progress
 
-<img src='http://g.recordit.co/H2Yquo3FfI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/mkIALhWRB1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
