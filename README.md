@@ -28,7 +28,9 @@ The application allows users to quickly find various places near their current l
 - [X] User can log in and sign up for an account.
 - [ ] User can search for a location based on genre, name, search radius.
 - [ ] User can click on the desired location for the address and a desription.
-- [ ] User settings page is accessible and can be altered.
+- [X] User settings page is accessible.
+- [ ] User settings can be changed.
+- [X] User can navigate between tabs.
 - [ ] User can see found locations on map interface in comparison to user's current location.
 - [ ] User can "favorite" specific locations to be saved and referenced later on another tab.
 
@@ -126,5 +128,9 @@ The application allows users to quickly find various places near their current l
 ## Progress
 
 ### Week 7 Progress
+
+<img src='http://g.recordit.co/H2Yquo3FfI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+### Week 8 Progress
 
 <img src='http://g.recordit.co/H2Yquo3FfI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
