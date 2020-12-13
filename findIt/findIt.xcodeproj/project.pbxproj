@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C97BD692585AAD6002C1888 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C97BD682585AAD6002C1888 /* MapScreen.swift */; };
 		4B68788C6704CAA0C580D3B9 /* Pods_findIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D057606D65659ABAC1BD584 /* Pods_findIt.framework */; };
 		5EAD7732F019AEC89E279C24 /* Pods_findIt_findItUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D09622948A6189623B4C352 /* Pods_findIt_findItUITests.framework */; };
 		BB11E318257416F000018E52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB11E317257416F000018E52 /* AppDelegate.swift */; };
@@ -43,6 +44,7 @@
 		093AC1E3D50F9769204533D1 /* Pods_findItTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_findItTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D057606D65659ABAC1BD584 /* Pods_findIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_findIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D09622948A6189623B4C352 /* Pods_findIt_findItUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_findIt_findItUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C97BD682585AAD6002C1888 /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
 		48890789DE1F2A908CBB6167 /* Pods-findIt-findItUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-findIt-findItUITests.debug.xcconfig"; path = "Target Support Files/Pods-findIt-findItUITests/Pods-findIt-findItUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		77A6749137BFA2B66D6D6158 /* Pods-findIt-findItUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-findIt-findItUITests.release.xcconfig"; path = "Target Support Files/Pods-findIt-findItUITests/Pods-findIt-findItUITests.release.xcconfig"; sourceTree = "<group>"; };
 		78776F852DB40349D85B4A71 /* Pods-findIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-findIt.debug.xcconfig"; path = "Target Support Files/Pods-findIt/Pods-findIt.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				BB11E319257416F000018E52 /* SceneDelegate.swift */,
 				BB11E31B257416F000018E52 /* ViewController.swift */,
 				BB11E31D257416F000018E52 /* Main.storyboard */,
+				3C97BD682585AAD6002C1888 /* MapScreen.swift */,
 				BB11E320257416F700018E52 /* Assets.xcassets */,
 				BB11E322257416F700018E52 /* LaunchScreen.storyboard */,
 				BB11E325257416F700018E52 /* Info.plist */,
@@ -413,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C97BD692585AAD6002C1888 /* MapScreen.swift in Sources */,
 				BB11E31C257416F000018E52 /* ViewController.swift in Sources */,
 				BB49E21A2574318800A0F9AC /* RegisterViewController.swift in Sources */,
 				BB11E318257416F000018E52 /* AppDelegate.swift in Sources */,
