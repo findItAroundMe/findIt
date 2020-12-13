@@ -61,6 +61,14 @@ class MapScreen: UIViewController {
             break
         }
     }
+    
+    func addAnnotations() {
+        let annotation = MKPointAnnotation()
+        annotation.title = "San Francisco"
+        annotation.coordinate = CLLocationCoordinate2D(latitude: 37.7739, longitude: -122.4312)
+        
+        mapView.addAnnotation(annotation)
+    }
 
 }
     
@@ -71,6 +79,7 @@ extension MapScreen: CLLocationManagerDelegate {
         let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
         let region = MKCoordinateRegion.init(center: center, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
         mapView.setRegion(region, animated: true)
+        addAnnotations()
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
