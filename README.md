@@ -123,5 +123,5 @@ The application allows users to keep location-based memory blogs about their tri
 ### Week 8 Progress
 <img src='http://g.recordit.co/mkIALhWRB1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-### Week 9 - 10 Progress
+### Week 9 - 10 Progress & Final Deliverable
 
