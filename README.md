@@ -31,18 +31,16 @@ The application allows users to keep location-based memory blogs about their tri
 - [X] User can log in and sign up for an account.
 - [X] User can search for a location based on city name or address.
 - [X] User can click on the map annotation to view or add the blog.
-- [X] User settings can be viewed.
 - [X] User can navigate between tabs.
 - [X] User can see found location on map interface in comparison to user's current location.
 - [X] User login stays across restart.
-- [X] User can click on the desired location for detailed desrciption/more information.
 - [X] User can change current location to reflect another desired zip code or city.
 - [X] User can zoom and see all blog posts created across the map.
 
 **Optional Nice-to-have Stories**
 
 - [ ] User can "favorite" specific locations to be saved and referenced later on another tab.
-- [ ] User settings can be changed.
+- [ ] User settings can be viewed and changed.
 
 ### 2. Screen Archetypes
 
@@ -124,4 +122,4 @@ The application allows users to keep location-based memory blogs about their tri
 <img src='http://g.recordit.co/mkIALhWRB1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### Week 9 - 10 Progress & Final Deliverable
-
+<img src='http://g.recordit.co/1JC9GYwyVE.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
