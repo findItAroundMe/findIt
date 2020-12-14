@@ -18,8 +18,11 @@
 		BB11E324257416F700018E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB11E322257416F700018E52 /* LaunchScreen.storyboard */; };
 		BB11E32F257416F700018E52 /* findItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB11E32E257416F700018E52 /* findItTests.swift */; };
 		BB11E33A257416F700018E52 /* findItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB11E339257416F700018E52 /* findItUITests.swift */; };
+		BB1AF98B25872A8D0086A31D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1AF98A25872A8D0086A31D /* ProfileViewController.swift */; };
+		BB21935B25871BAE0021EBD0 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB21935A25871BAE0021EBD0 /* EditViewController.swift */; };
 		BB49E2182574219B00A0F9AC /* LoggingInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49E2172574219B00A0F9AC /* LoggingInViewController.swift */; };
 		BB49E21A2574318800A0F9AC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49E2192574318800A0F9AC /* RegisterViewController.swift */; };
+		BB7713FA2587008400F37A58 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7713F92587008400F37A58 /* LocationDetailsViewController.swift */; };
 		E64A9F7DEBE6D771904750ED /* Pods_findItTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093AC1E3D50F9769204533D1 /* Pods_findItTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,8 +67,11 @@
 		BB11E335257416F700018E52 /* findItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = findItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB11E339257416F700018E52 /* findItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findItUITests.swift; sourceTree = "<group>"; };
 		BB11E33B257416F700018E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB1AF98A25872A8D0086A31D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BB21935A25871BAE0021EBD0 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		BB49E2172574219B00A0F9AC /* LoggingInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingInViewController.swift; sourceTree = "<group>"; };
 		BB49E2192574318800A0F9AC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		BB7713F92587008400F37A58 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		DB145BE355DEE7A61772EEB3 /* Pods-findItTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-findItTests.release.xcconfig"; path = "Target Support Files/Pods-findItTests/Pods-findItTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +151,9 @@
 				BB11E325257416F700018E52 /* Info.plist */,
 				BB49E2172574219B00A0F9AC /* LoggingInViewController.swift */,
 				BB49E2192574318800A0F9AC /* RegisterViewController.swift */,
+				BB7713F92587008400F37A58 /* LocationDetailsViewController.swift */,
+				BB21935A25871BAE0021EBD0 /* EditViewController.swift */,
+				BB1AF98A25872A8D0086A31D /* ProfileViewController.swift */,
 			);
 			path = findIt;
 			sourceTree = "<group>";
@@ -416,10 +425,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB21935B25871BAE0021EBD0 /* EditViewController.swift in Sources */,
+				BB7713FA2587008400F37A58 /* LocationDetailsViewController.swift in Sources */,
 				3C97BD692585AAD6002C1888 /* MapScreen.swift in Sources */,
 				BB11E31C257416F000018E52 /* ViewController.swift in Sources */,
 				BB49E21A2574318800A0F9AC /* RegisterViewController.swift in Sources */,
 				BB11E318257416F000018E52 /* AppDelegate.swift in Sources */,
+				BB1AF98B25872A8D0086A31D /* ProfileViewController.swift in Sources */,
 				BB49E2182574219B00A0F9AC /* LoggingInViewController.swift in Sources */,
 				BB11E31A257416F000018E52 /* SceneDelegate.swift in Sources */,
 			);
