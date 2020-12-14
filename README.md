@@ -8,16 +8,19 @@
 5. [Development Progress](#Progress)
 
 ## Overview
+
 ### Description
-The application allows users to quickly find various places near their current location based on either previously selected preferences, a certain category, name, or distance and display a detailed page with information on user-selected locations.
+
+The application allows users to keep location-based memory blogs about their trips to various locations across the globe.
 
 ### App Evaluation
+
 - **Category:** Lifestyle / Travel
 - **Mobile:** This application will be primarily developed for mobile devices but can also be viable on computers, such as Yelp or other similar applications. The application intends to make use of the maps and location features of a mobile device.
-- **Story:** Analyzes the user's location and connects the user to nearby locations that might peak their interest/current needs.
+- **Story:** Analyzes the user's selected location and connect the user to a new or previously created blog for that location.
 - **Market:** Any individual can choose to use this application.
-- **Habit:** This application can be used as often as a users wants to depending on their need/desire to search for nearby locations.
-- **Scope:** First we would ensure that a user can find locations of restaurants, entertainment, etc. that appear in a list (with a genre and address) based on their current location. Secondly, we would try to expand on the locatins find by providing more in-depth features that would allow users to inderatc with the locations found (i.e. directions, websites, contact information, etc.).
+- **Habit:** This application can be used as often as a users wants to depending on their need/desire to digitize written memories of their experiences.
+- **Scope:** First we would ensure that a user can find the locations they indicate. Secondly, we would try to expand on the blog posts by location by allowing the to also view all blogs on one screen and search by location or date.).
 
 ## Product Spec
 
@@ -26,33 +29,31 @@ The application allows users to quickly find various places near their current l
 **Required Must-have Stories**
 
 - [X] User can log in and sign up for an account.
-- [ ] User can search for a location based on genre, name, search radius.
-- [ ] User can click on the desired location for the address and a desription.
-- [X] User settings page is accessible.
-- [ ] User settings can be changed.
+- [X] User can search for a location based on city name or address.
+- [X] User can click on the map annotation to view or add the blog.
+- [X] User settings can be viewed.
 - [X] User can navigate between tabs.
-- [ ] User can see found locations on map interface in comparison to user's current location.
-- [ ] User can "favorite" specific locations to be saved and referenced later on another tab.
+- [X] User can see found location on map interface in comparison to user's current location.
+- [X] User login stays across restart.
+- [X] User can click on the desired location for detailed desrciption/more information.
+- [X] User can change current location to reflect another desired zip code or city.
+- [X] User can zoom and see all blog posts created across the map.
 
 **Optional Nice-to-have Stories**
 
-- [ ] User can click on the desired location for detailed desrciption/more information.
-- [ ] User can change current location to reflect another desired zip code or city.
+- [ ] User can "favorite" specific locations to be saved and referenced later on another tab.
+- [ ] User settings can be changed.
 
 ### 2. Screen Archetypes
 
 * Login
   * Signs up or logs into account.
-* Search Screen
-  * Upon searching for location category, name, etc., map screen opens
 * Map Screen
-   * Displays user's search results on map and contains descriptive infromation below in a swipable list. Allows user to favorite specific locations.
+   * Displays user's search results on map and contains the annotation of search on map.
+* Blog Screen
+   * Lets people see the blog post for the location they have specified.
 * Profile Screen
   * Lets people confirm location, change language, or change password.
-* Saved Screen
-  * Lets people see locations they have favorited.
-* Genre Screen
-  * Lets people create a search from categories.
 
 ### 3. Navigation
 
@@ -60,77 +61,67 @@ The application allows users to quickly find various places near their current l
 
 * Search
 * Profile
-* Settings
-* Saved Locations
-* Genre
 
 **Flow Navigation** (Screen to Screen)
 
 * Forced Log-in -> Account creation if no log in is available.
-* Saved Locations -> Toggle saved locations.
-* Search Screen -> allows for user input -> Jumps to Map Screen showing search results.
+* Map -> allows for user input -> Jumps to Map Screen showing search results.
+* Blog -> Text fields to be modified and viewed
 * Profile -> Text fields to be modified. 
-* Settings -> Toggle settings.
-* Genre -> Buttons to be selected -> Jumps to Map Screen showing search results.
 
 ## Digital Wireframes
 <img src="./login_screens.png" width=600>
 <img src="./search_screens.png" width=600>
 
-## Schema 
-[This section will be completed in Unit 9]
+## Schema
 
 ### Models
-#### Favorited Location
+
+#### Locations
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | author        | Pointer to User| image author |
-   | name          | String   | name of the location
-   | category      | String   | description to specify category of location |
-   | address       | String   | address of the location |
-
+   | location      | String   | name of location |
+   | hasDetails    | Boolean  | Whether or not the blog has been filled |
+   | weather       | String   | description to specify category of location |
+   | food          | String   | food eaten at location |
+   | drink         | String   | drink tasted at location |
+   | stayed        | String   | places stayed at location |
+   | memory        | String   | favorite memories at location |
+   
 ### Networking
+
 #### List of network requests by screen
 * Saved Screen
-   - Saved Locations Screen
-      - (Read/GET) Query all saved locations where user is author
+   - Map Screen
+      - (Read/GET) Query all saved locations on map
          ```swift
-         let query = PFQuery(className:"Locations")
-         query.whereKey("author", equalTo: currentUser)
-         query.order(byDescending: "createdAt")
-         query.findObjectsInBackground { (locations: [PFObject]?, error: Error?) in
-            if let error = error { 
-               print(error.localizedDescription)
-            } else if let locations = locations {
-               print("Successfully retrieved \(locations.count) locations.")
-           // TODO: Do something with posts...
+         let currLocation = PFObject(className: "Locations")
+            currLocation["Location"] = city
+            currLocation["hasDetails"] = false
+            currLocation.saveInBackground() { (success, error) in
+                       if success {
+                           print("saved!")
+                       } else {
+                           print("error!")
+                       }
             }
-         }
          ```
       - (Delete) Delete existing saved location
-   - Search Screen
-      - (Create/POST) Create a new search text object
-      - (Read/GET) Query map object
+   - Blog Screen
+      - (Create/POST) Create a new "Locations" object
+      - (Read/GET) Query "Locations" object if already created + filled
    - Profile Screen
       - (Read/GET) Query logged in user object
       - (Update/PUT) Update user profile image
-   - Map Screen
-      - (Read/GET) Query location objects based on text search object and user's current location
-      - (Read/GET) Saved location object (to cross match with location obejcts)
-      - (Read/GET) Query map object
-      - (Create/POST) Create a new saved location
-   - Genre Screen
-      - (Read/GET) Query genre objects (as list)
-      
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
 
 ## Progress
 
 ### Week 7 Progress
-
 <img src='http://g.recordit.co/H2Yquo3FfI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### Week 8 Progress
-
 <img src='http://g.recordit.co/mkIALhWRB1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+### Week 9 - 10 Progress
+
